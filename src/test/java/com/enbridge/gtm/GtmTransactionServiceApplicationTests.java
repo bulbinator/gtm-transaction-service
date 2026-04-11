@@ -1,0 +1,13 @@
+package com.enbridge.gtm;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class GtmTransactionServiceApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
