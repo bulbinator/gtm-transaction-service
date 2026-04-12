@@ -18,6 +18,9 @@ public class TransactionService {
         if (transaction.getGasVolume() > 0) {
             transactionRepository.save(transaction);
         }
+        else {
+            throw new RuntimeException("Gas volume must be positive!");
+        }
     }
 
     public List<Transaction> getAllTransactions() {
