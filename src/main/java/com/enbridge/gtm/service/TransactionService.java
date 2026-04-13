@@ -19,7 +19,7 @@ public class TransactionService {
             transactionRepository.save(transaction);
         }
         else {
-            throw new RuntimeException("Gas volume must be positive!");
+            throw new InvalidTransactionException("Gas volume must be positive!");
         }
     }
 
